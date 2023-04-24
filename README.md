@@ -37,3 +37,15 @@ GET /probes/readiness - check service readiness
 ```
 GET /probes/liveness - check service liveness
 ```
+
+### Docker
+
+Service allows to use Dockerfile:
+
+```
+docker build -t json-vault .
+```
+
+```
+docker run -d -p 8081:8081 json-vault
+```
